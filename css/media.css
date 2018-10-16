@@ -1,0 +1,175 @@
+@media screen and (max-width: 576px) {
+    html, 
+    body {
+        width: 100%;
+        overflow: scroll;
+        /* overflow-x: hidden; */
+    }
+
+    #parallax-bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        margin: 0;
+        margin-left: 80px;
+        padding: 15px;
+        /* width: calc(100% - 80px); */
+        height: auto;
+    }
+
+    .slide {
+        overflow-x: hidden;
+    }
+
+    /* .main-nav {
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        display: none;
+    } */
+
+    .main-nav  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+
+    /* .main {
+        margin-top: 40px;
+    } */
+
+    .lang-list {
+        margin-top: 40px;
+    }
+
+    .main-nav__wrapper {
+        margin: 0;
+    }
+
+    .menu-button {
+        margin-top: 20px;
+        width: 55px;
+    }
+
+    .menu-close-button img{
+        margin: 10px auto 0;
+    }
+
+    .slick-dots {
+        display: none;
+    }
+
+    .page-header {
+        margin: 80px 0 60px;
+        margin-top: 80px;
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    .page-header::after {
+        content: "";
+    
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    
+        width: 160px;
+        height: 2px;
+        background-color: #d6ff00;
+    }
+
+
+    .container__main-page {
+        box-sizing: border-box;
+        margin: 0;
+        margin-left: 80px;
+        padding: 0 15px;
+        height: 100vh;
+    }
+
+    .main-page__header {
+        margin-top: 0;
+    }
+
+    .main-page__p {
+        margin: 0;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .main-page__start-project-button {
+        display: block;
+        margin-top: 70px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .about-us-page {
+        display: none;
+    }
+
+    .services-list {
+        display: block;
+    }
+
+    .services-list__item {
+        width: auto;
+    }
+
+    .fixed {
+        display: none;
+    }
+
+    .form-row { 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+
+    .write-page__form {
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    #submit {
+        float: none;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -80px;
+    }
+
+
+    .feedback {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .feedback li{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .feedback span{
+        margin-bottom: 20px;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+}
