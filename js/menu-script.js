@@ -15,32 +15,70 @@
     var logoSign = document.querySelector('.logo-sign');
     var mainNavWrapper = document.querySelector('.main-nav__wrapper');
 
-    var langLinkCurrent = document.querySelector('.lang-list__link--current');
+    // var langList = document.querySelector('.lang-list');
+    // var langLinkCurrent = document.querySelector('.lang-list__link--current');
 
-    openMenuButton.addEventListener('click', () => {
-        // mainNav.classList.add('main-nav--active');
-        // logoWrapper.classList.add('main-nav__logo-wrapper--active');
-        // logo.classList.remove('visually-hidden');
-        // logoSign.classList.add('visually-hidden');
-        // mainNavWrapper.classList.remove('visually-hidden');
+    var hamburger = document.querySelector(".hamburger");
 
+    var navListLink = document.querySelectorAll(".nav-list__link");
+
+    if (document.documentElement.clientWidth > 576) {
+        openMenuButton.addEventListener('click', () => {
+            // mainNav.classList.add('main-nav--active');
+            // logoWrapper.classList.add('main-nav__logo-wrapper--active');
+            // logo.classList.remove('visually-hidden');
+            // logoSign.classList.add('visually-hidden');
+            // mainNavWrapper.classList.remove('visually-hidden');
+    
+            // langLinkCurrent.classList.remove('visually-hidden');
+    
+            mainNav.classList.toggle('main-nav--active');
+            logoWrapper.classList.toggle('main-nav__logo-wrapper--active');
+            logo.classList.toggle('visually-hidden');
+            logoSign.classList.toggle('visually-hidden');
+            mainNavWrapper.classList.toggle('visually-hidden');
+    
+            // langLinkCurrent.classList.toggle('visually-hidden');
+    
+            openMenuButton.classList.toggle('close-menu-button');
+            menuButtonTextOpen.classList.toggle('visually-hidden');
+            menuButtonTextClose.classList.toggle('visually-hidden');
+    
+            // openMenuButton.classList.add('visually-hidden');
+            // closeMenuButton.classList.remove('visually-hidden');
+        });
+    } else {
+        logoSign.classList.add('visually-hidden');
+        logo.classList.remove('visually-hidden');
+
+        menuButtonTextOpen.classList.add('visually-hidden');
+        menuButtonTextClose.classList.add('visually-hidden');
+
+        // langList.classList.add('visually-hidden')
         // langLinkCurrent.classList.remove('visually-hidden');
 
-        mainNav.classList.toggle('main-nav--active');
-        logoWrapper.classList.toggle('main-nav__logo-wrapper--active');
-        logo.classList.toggle('visually-hidden');
-        logoSign.classList.toggle('visually-hidden');
-        mainNavWrapper.classList.toggle('visually-hidden');
+        mainNavWrapper.classList.remove('visually-hidden');
+        
+        hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
 
-        langLinkCurrent.classList.toggle('visually-hidden');
+            // mainNav.classList.toggle('main-nav--active');
+            // logoWrapper.classList.toggle('main-nav__logo-wrapper--active');
+            mainNavWrapper.classList.toggle('main-nav__wrapper--active');
+            // mainNavWrapper.classList.toggle('visually-hidden');
+            
+            langList.classList.toggle('visually-hidden');
 
-        openMenuButton.classList.toggle('close-menu-button');
-        menuButtonTextOpen.classList.toggle('visually-hidden');
-        menuButtonTextClose.classList.toggle('visually-hidden');
+            Array.from(navListLink).forEach((elem) => {
+                elem.addEventListener("click", function () {
+                    hamburger.classList.remove("is-active");
+                    mainNavWrapper.classList.remove('main-nav__wrapper--active');
+                    langList.classList.add('visually-hidden');
+                });
+            });
+        });
+    }
 
-        // openMenuButton.classList.add('visually-hidden');
-        // closeMenuButton.classList.remove('visually-hidden');
-    });
 
 })();
 
