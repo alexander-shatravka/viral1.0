@@ -175,6 +175,7 @@ ul {
     text-align: left;
     width: auto;
     margin-top: auto;
+    margin-bottom: 60px;
     padding: 0;
     outline: none;
     color: #7a7a7a;
@@ -208,7 +209,7 @@ ul {
 .close-menu-button {
     margin-left: 30px;
     transform: translateX(0);
-    transition: margin 0.5s;
+    /* transition: margin 0.5s; */
 }
 
 .close-menu-button img {
@@ -221,6 +222,8 @@ ul {
     margin: auto 0;
     padding: 0 30px;
     transition: 0.5s;
+
+    user-select: none;
 
     order: 1;
 }

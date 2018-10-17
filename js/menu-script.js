@@ -15,8 +15,8 @@
     var logoSign = document.querySelector('.logo-sign');
     var mainNavWrapper = document.querySelector('.main-nav__wrapper');
 
-    var langList = document.querySelector('.lang-list');
-    var langLinkCurrent = document.querySelector('.lang-list__link--current');
+    // var langList = document.querySelector('.lang-list');
+    // var langLinkCurrent = document.querySelector('.lang-list__link--current');
 
     var hamburger = document.querySelector(".hamburger");
 
@@ -38,7 +38,7 @@
             logoSign.classList.toggle('visually-hidden');
             mainNavWrapper.classList.toggle('visually-hidden');
     
-            langLinkCurrent.classList.toggle('visually-hidden');
+            // langLinkCurrent.classList.toggle('visually-hidden');
     
             openMenuButton.classList.toggle('close-menu-button');
             menuButtonTextOpen.classList.toggle('visually-hidden');
@@ -54,8 +54,8 @@
         menuButtonTextOpen.classList.add('visually-hidden');
         menuButtonTextClose.classList.add('visually-hidden');
 
-        langList.classList.add('visually-hidden')
-        langLinkCurrent.classList.remove('visually-hidden');
+        // langList.classList.add('visually-hidden')
+        // langLinkCurrent.classList.remove('visually-hidden');
 
         mainNavWrapper.classList.remove('visually-hidden');
         
