@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
 function initParallax() {
-	var scene = document.querySelector('#parallax-bg');
+	var scene = document.querySelector('.parallax-bg');
 	var parallaxInstance = new Parallax(scene, {    
 		relativeInput: true,
 	});

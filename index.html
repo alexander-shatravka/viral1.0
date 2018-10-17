@@ -13,13 +13,19 @@
     <title>Viral</title>
 </head>
 <body>
-    <div id="parallax-bg">
+    <div class="parallax-bg">
         <div data-depth="0.2" class="layer layer-1"></div>
         <div data-depth="0.3" class="layer layer-2"></div>
         <div data-depth="0.4" class="layer layer-3"></div>
         <div data-depth="0.5" class="layer layer-4"></div>
     </div>
     <div id="preloader">
+        <div class="parallax-bg">
+            <div data-depth="0.2" class="layer layer-1"></div>
+            <div data-depth="0.3" class="layer layer-2"></div>
+            <div data-depth="0.4" class="layer layer-3"></div>
+            <div data-depth="0.5" class="layer layer-4"></div>
+        </div>
         <a href="#" class="header__logo">
             <h1 class="logo__main">Viral</h1>
             <p class="logo__description">Digital agency</p>
@@ -30,7 +36,7 @@
         <div class="main-nav__logo-wrapper">
             <a href="http://viral.com.ua/" class="main-nav__logo logo visually-hidden">
                 <h2 class="logo__main">Viral</h2>
-                <p class="logo__description">Digital agency</p>
+                <p class="logo__description logo__description--media">Digital agency</p>
             </a>
 
             <a href="http://viral.com.ua/" class="main-nav__logo logo-sign">
@@ -38,7 +44,14 @@
             </a>
         </div>
 
-        <button class="menu-button open-menu-button" type="button"><span class="menu-button__text-open">Меню</span><span class="menu-button__text-close visually-hidden">Скрыть</span><img src="img/arrow_forward.svg" alt=""></button>
+        <button class="menu-button open-menu-button hamburger hamburger--emphatic" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+            <span class="menu-button__text-open">Меню</span>
+            <span class="menu-button__text-close visually-hidden">Скрыть</span>
+            <img src="img/arrow_forward.svg" alt="">
+        </button>
 
         <div class="main-nav__wrapper visually-hidden">
             <ul class="main-nav__list nav-list">
@@ -48,7 +61,12 @@
                 <!-- <li class="nav-list__item"><a href="#" class="nav-list__link">Работы</a></li> -->
                 <!-- <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li> -->
                 <li class="nav-list__item"><a href="#container-contacts" id="contacts" class="nav-list__link">Контакты</a></li>
-            </ul>   
+            </ul>
+            <ul class="main-nav__wrapper__lang lang-list">
+                <li class="lang-list__item"><a href="#" class="lang-list__link">en</a></li>
+                <li class="lang-list__item"><a href="#" class="lang-list__link lang-list__link--current visually-hidden">ru</a></li>
+            </ul>
+            <button type="button" class="main-nav__start-project-button button">Начать проект</button>
         </div>
 
         <!-- <button class="menu-button close-menu-button visually-hidden" type="button">Скрыть</button> -->
@@ -75,6 +93,7 @@
                     в современном мире с цифровым управлением.
                 </p>
                 <div class="arrow"></div>
+                <button type="button" class="main-page__start-project-button button">Начать проект</button>
             </section>
         </div>
         <div class="container container__services" id="container-services">
@@ -189,9 +208,10 @@
 
         <div class="container" id="container-contacts">
             <section  class="write-page page">
-                <h2 class="visually-hidden">Начать проект</h2>
+                <h2 class="visually-hidden">Напишите нам</h2>
                 <header class="write-page__header page-header">
-                    Напишите нам или свяжитесь любым удобным способом
+                    Напишите нам<br>
+                    <span class="write-page__header--span">или свяжитесь любым удобным способом</span>
                 </header>
 
                 <form class="write-page__form" id="order">
@@ -214,6 +234,7 @@
                     <li><span>Telegram:</span><a href="tg:https://t.me/VIRAL_DA">t.me/VIRAL_DA</a></li>
                     <li><span>Email:</span><a href="mailto:market@viral.com.ua">Market@viral.com.ua</a></li>
                 </ul>
+                <p class="write-page__copyright">© 2018 VIRAL. All right reserved</p>
             </section>
         </div>
 

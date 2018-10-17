@@ -7,8 +7,6 @@ body {
     font-size: 18px;
     text-align: justify;
 
-    /* overflow-x: hidden; */
-
     color: #f3f3f3;
     background-color: #000;
     overflow: hidden;
@@ -199,6 +197,7 @@ ul {
     width: 40px;
     text-align: left;
     position: relative;
+    /* transition: margin 0.5s; */
     /* transform: rotate(-90deg); */
 }
 
@@ -207,7 +206,7 @@ ul {
 }
 
 .close-menu-button {
-    margin: 0 auto;
+    margin-left: 30px;
     transform: translateX(0);
     transition: margin 0.5s;
 }
@@ -246,8 +245,12 @@ ul {
     padding: 0 30px 28px;
 
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     order: 3;
+}
+
+.lang-list__item {
+    margin-right: 20px;
 }
 
 .lang-list__link {
@@ -264,13 +267,21 @@ ul {
     color: #d6ff00;
 }
 
+.main-nav__wrapper__lang {
+    display: none;
+}
+
+.main-nav__start-project-button {
+    display: none;
+}
+
 .page-header {
     margin: 0 0 -40px 0;
 
     position: relative;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     text-transform: uppercase;
     text-align: left;
 
@@ -309,6 +320,10 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #555555;
+}
+
+.main-page__start-project-button {
+    display: none;
 }
 
 .main-page__p,
@@ -571,6 +586,14 @@ ul {
     margin-top: 20px;
 }
 
+.slick-active .write-page__header {
+    margin-bottom: 80px;
+}
+
+.write-page__header--span {
+    font-size: 18px;
+}
+
 .write-page__form .button{
     float: right;
     margin-top: 20px;
@@ -591,7 +614,7 @@ ul {
 }
 
 .form-row:first-child{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 } 
 
 
@@ -637,7 +660,7 @@ textarea {
 
 .feedback {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
 }
@@ -663,6 +686,16 @@ textarea {
     color: #d6ff00;
     transition: 0.5s;
 } 
+
+.write-page__copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 12px;
+    color: #343434;
+}
 
 .fixed__start-project-button {
     position: fixed;
@@ -825,7 +858,7 @@ textarea {
     z-index: 9999999;
 }
 
-#parallax-bg {
+.parallax-bg {
     position: absolute;
     top: -10%;
     left: -10%;
@@ -833,23 +866,23 @@ textarea {
     width: 120%;
 }
 
-#parallax-bg .layer{
+.parallax-bg .layer{
     background-size: cover; 
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
-#parallax-bg .layer-1 {
+.parallax-bg .layer-1 {
     background: url('../img/bg20.svg')no-repeat center center;
 }
-#parallax-bg .layer-2 {
+.parallax-bg .layer-2 {
     background: url('../img/bg30.svg')no-repeat center center;
 }
-#parallax-bg .layer-3 {
+.parallax-bg .layer-3 {
     background: url('../img/bg40.svg')no-repeat center center;
 }
-#parallax-bg .layer-4 {
+.parallax-bg .layer-4 {
     background: url('../img/bg50.svg')no-repeat center center;
 }
 
