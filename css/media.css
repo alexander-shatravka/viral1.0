@@ -297,6 +297,7 @@
 
     .main-page__p {
         margin: 0;
+        margin-bottom: 42px;
         opacity: 1;
         text-align: left;
     }
@@ -346,7 +347,7 @@
     }
 
     input, textarea {
-        width: 90%;
+        width: 100%;
     }
 
     .write-page__form {
