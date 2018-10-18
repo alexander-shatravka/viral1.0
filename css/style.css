@@ -62,7 +62,7 @@ ul {
     transition: 1s;
 }
 
-.button::after {
+/* .button::after {
     content: '';
 
     position: absolute; 
@@ -75,16 +75,17 @@ ul {
 
     transition: 1s;
     z-index: -1;
-}
+} */
 
 .button:hover {
     color: #000!important;
+    background-color: #d6ff00;
     border-color: #d6ff00;
 }
 
-.button:hover::after {
+/* .button:hover::after {
     height: 100%;
-}
+} */
 
 .header {
     align-items: center;

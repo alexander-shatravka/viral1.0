@@ -67,13 +67,13 @@
             mainNavWrapper.classList.toggle('main-nav__wrapper--active');
             // mainNavWrapper.classList.toggle('visually-hidden');
             
-            langList.classList.toggle('visually-hidden');
+            // langList.classList.toggle('visually-hidden');
 
             Array.from(navListLink).forEach((elem) => {
                 elem.addEventListener("click", function () {
                     hamburger.classList.remove("is-active");
                     mainNavWrapper.classList.remove('main-nav__wrapper--active');
-                    langList.classList.add('visually-hidden');
+                    // langList.classList.add('visually-hidden');
                 });
             });
         });
