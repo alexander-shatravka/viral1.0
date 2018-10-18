@@ -69,11 +69,14 @@
             
             // langList.classList.toggle('visually-hidden');
 
+            document.querySelector("body").classList.toggle("none-scroll");
+
             Array.from(navListLink).forEach((elem) => {
                 elem.addEventListener("click", function () {
                     hamburger.classList.remove("is-active");
                     mainNavWrapper.classList.remove('main-nav__wrapper--active');
                     // langList.classList.add('visually-hidden');
+                    document.querySelector("body").classList.remove("none-scroll");
                 });
             });
         });

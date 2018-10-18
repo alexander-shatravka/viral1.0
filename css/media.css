@@ -390,4 +390,10 @@
     .container {
         overflow-x: hidden;
     }
+
+    .none-scroll {
+        position: absolute;
+        max-height: 100vh;
+        overflow-y: hidden !important;
+    }
 }
