@@ -80,4 +80,12 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+    $('.button-anchor').on("click", function (event) {
+        event.preventDefault();
+        $('.main-nav__wrapper').removeClass('main-nav__wrapper--active');
+        $('.hamburger').removeClass('is-active');     
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
 });
